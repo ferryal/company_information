@@ -1,0 +1,6 @@
+export const GET_COMPANY = 'get_company_list'
+export const GET_OFFICE_LIST = 'get_office_list'
+export const ADD_COMPANY = 'add_company'
+export const ADD_OFFICE = 'add_office'
+export const DELETE_COMPANY = 'delete_company'
+export const DELETE_OFFICE = 'delete_office'
