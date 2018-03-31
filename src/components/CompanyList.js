@@ -3,15 +3,15 @@ import { connect } from 'react-redux'
 
 class CompanyList extends Component {
   renderCompany() {
-    if (this.props.addCompany) {
-      return this.props.addCompany.map ( r => {
+    if (this.props.company) {
+      return this.props.company.map ( r => {
         return (
-          <div>
-            <h3>Company List</h3>
+          <div key={r.id}>
             <ul>
               <li>{r.name}</li>
-              <li>{r.address}</li>
-              <li>{r.phone}</li>
+              <li>Address: {r.address}</li>
+              <li>Revenue: {r.revenue}</li>
+              <li>Phone No: {r.phone}</li>
             </ul>
           </div>
         )
@@ -23,6 +23,7 @@ class CompanyList extends Component {
   render() {
     return (
       <div>
+        <h3>Companies</h3>
         {this.renderCompany()}
       </div>
     )
