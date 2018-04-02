@@ -2,7 +2,7 @@ import { GET_COMPANY } from './types'
 import axios from 'axios'
 
 
-export default function getCompantList(name){
+const getCompanyList = (name) =>{
   return dispatch => {
     axios.get(`${process.env.REACT_APP_API_URL}/company`)
       .then(res=> {
@@ -16,9 +16,12 @@ export default function getCompantList(name){
 }
 
 
-function getCompanyListAsync (company){
+
+const getCompanyListAsync = (company) => {
   return {
     type: GET_COMPANY,
     payload: company
   }
 }
+
+export default getCompanyList

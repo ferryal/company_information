@@ -3,7 +3,7 @@ import axios from 'axios'
 
 addCompany = () => {
   return dispatch => {
-    axios.post(`API_URL`)
+    axios.post(`${process.env.REACT_APP_API_URL/company}`)
   }
   .then(res => {
     console.log(res.data);
@@ -16,9 +16,9 @@ addCompany = () => {
 
 export default addCompany
 
-addCompanyAsync('belumtau') {
+addCompanyAsync(addCompany) {
   return {
     type: ADD_COMPANY,
-    payload:
+    payload: addCompany 
   }
 }

@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {bindActionCreators} from 'redux'
+import getCompany from '../actions/get_company'
 
 class CompanyList extends Component {
+  componentDidMount() {
+    this.props.getCompany()
+  }
   renderCompany() {
     if (this.props.company) {
       return this.props.company.map ( r => {
@@ -30,10 +35,17 @@ class CompanyList extends Component {
   }
 }
 
-function mapStateToProps(state){
+ const mapStateToProps = state => {
     return {
       company : state.company
     }
-  }
+}
 
-export default connect(mapStateToProps, null)(CompanyList)
+const mapDispacthToProps = dispatch => {
+  return bindActionCreators({
+    getCompany: getCompany
+  }, dispatch)
+}
+
+
+export default connect(mapStateToProps, mapDispacthToProps)(CompanyList)

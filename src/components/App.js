@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import getCompany from '../actions/get_company_list'
+// import { connect } from 'react-redux'
+// import { bindActionCreators } from 'redux'
+// import getCompany from '../actions/get_company_list'
 import CompanyList from './CompanyList'
 
 
 class App extends Component {
-  componentDidMount() {
-    this.props.getCompany()
-  }
+  // componentDidMount() {
+  //   this.props.getCompany()
+  // }
   render() {
     return (
       <div className="App">
@@ -25,16 +25,16 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    company : state.company
-  }
-}
+// function mapStateToProps(state) {
+//   return {
+//     company : state.company
+//   }
+// }
+//
+// function mapDispacthToProps(dispatch) {
+//   return bindActionCreators({
+//     getCompany : getCompany
+//   }, dispatch)
+// }
 
-function mapDispacthToProps(dispatch) {
-  return bindActionCreators({
-    getCompany : getCompany
-  }, dispatch)
-}
-
-export default connect(mapStateToProps, mapDispacthToProps) (App);
+export default App;
