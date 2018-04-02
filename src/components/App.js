@@ -4,6 +4,7 @@ import '../App.css';
 // import { bindActionCreators } from 'redux'
 // import getCompany from '../actions/get_company_list'
 import CompanyList from './CompanyList'
+import CompanyForm from './CompanyForm'
 
 
 class App extends Component {
@@ -19,6 +20,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+      <div>
+        <CompanyForm />
+      </div>
       <CompanyList />
       </div>
     );

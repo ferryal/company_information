@@ -1,11 +1,44 @@
 {
   "office": [
-    { "companyId": 1, "id":1, "name": "PT Gojek Indonesia", "location": { "lat": 910, "long": 9921 }, "dage": "2017/03/21", "company": "company.nme" }
+    {
+      "companyId": 1,
+      "id": 1,
+      "name": "PT Gojek Indonesia",
+      "location": {
+        "lat": 910,
+        "long": 9921
+      },
+      "dage": "2017/03/21",
+      "company": "company.nme"
+    }
   ],
   "company": [
-    { "id": 1, "name": "PT Gojek Indonesia", "address": "Kemang Utara", "revenue": "99999999", "phone":"+62 000001218201", "officeId": 1 },
-    { "id": 2, "name": "PT Bukalapak Indonesia", "address": "Rasuna said Utara", "revenue": "99999999", "phone":"+62 000001218201",  "officeId": 2 },
-    { "id": 3, "name": "PT Tokopedia Indonesia", "address": "Kemang Utara", "revenue": "99999999", "phone":"+62 000001218201",  "officeId": 3 }
+    {
+      "id": 1,
+      "name": "PT Gojek Indonesia",
+      "address": "Kemang Utara",
+      "revenue": "99999999",
+      "phone": "+62 000001218201",
+      "officeId": 1
+    },
+    {
+      "id": 2,
+      "name": "PT Bukalapak Indonesia",
+      "address": "Rasuna said Utara",
+      "revenue": "99999999",
+      "phone": "+62 000001218201",
+      "officeId": 2
+    },
+    {
+      "id": 3,
+      "name": "PT Tokopedia Indonesia",
+      "address": "Kemang Utara",
+      "revenue": "99999999",
+      "phone": "+62 000001218201",
+      "officeId": 3
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
