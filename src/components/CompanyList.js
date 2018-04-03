@@ -28,7 +28,7 @@ class CompanyList extends Component {
   render() {
     return (
       <div>
-        <h3>Companies</h3>
+        <h1>Companies</h1>
         {this.renderCompany()}
       </div>
     )

@@ -36,6 +36,27 @@
       "revenue": "99999999",
       "phone": "+62 000001218201",
       "officeId": 3
+    },
+    {
+      "name": "Matahari Mall",
+      "address": "Jakarta",
+      "revenue": "182916921",
+      "phone": "02103916391",
+      "id": 4
+    },
+    {
+      "name": "Tokopedia",
+      "address": "Kemang",
+      "revenue": "21791",
+      "phone": "2684242",
+      "id": 5
+    },
+    {
+      "name": "Ferryal Muhamad Fajar Bahari",
+      "address": "dadada",
+      "revenue": "96986",
+      "phone": "8696",
+      "id": 6
     }
   ],
   "profile": {

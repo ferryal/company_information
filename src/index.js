@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 import reducers from './reducers'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './index.css';
+import 'semantic-ui-css/semantic.min.css';
 import App from './components/App';
 
 

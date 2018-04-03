@@ -1,44 +1,29 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import { connect } from 'react-redux'
-// import { bindActionCreators } from 'redux'
-// import getCompany from '../actions/get_company_list'
+
 import CompanyList from './CompanyList'
 import CompanyForm from './CompanyForm'
 
 
 class App extends Component {
-  // componentDidMount() {
-  //   this.props.getCompany()
-  // }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      <div>
-        <CompanyForm />
-      </div>
-      <CompanyList />
+      <div className="container">
+        <div className="company_form">
+          <h2>Create Company</h2>
+          <CompanyForm />
+        </div>
+        <div className="office_form">
+          <h2>Create Office</h2>
+          <CompanyForm />
+        </div>
+        <div className="company_list">
+          <CompanyList />
+        </div>
       </div>
     );
   }
 }
-
-// function mapStateToProps(state) {
-//   return {
-//     company : state.company
-//   }
-// }
-//
-// function mapDispacthToProps(dispatch) {
-//   return bindActionCreators({
-//     getCompany : getCompany
-//   }, dispatch)
-// }
 
 export default App;
