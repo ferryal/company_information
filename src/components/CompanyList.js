@@ -11,7 +11,7 @@ class CompanyList extends Component {
     if (this.props.company) {
       return this.props.company.map ( r => {
         return (
-          <div key={r.id}>
+          <div key={r.id} className="row">
             <ul>
               <li>{r.name}</li>
               <li>Address: {r.address}</li>

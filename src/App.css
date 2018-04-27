@@ -21,3 +21,10 @@
 .office_form {
   margin: 5px 30px 15px 30px;
 }
+
+.row {
+  grid-auto-rows: minmax(10px, auto);
+  border: 2px solid grey;
+  list-style: none !important;
+  list-style-type: none;
+}

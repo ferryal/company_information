@@ -57,6 +57,13 @@
       "revenue": "96986",
       "phone": "8696",
       "id": 6
+    },
+    {
+      "name": "Pasar Polis",
+      "address": "Tanah Abang",
+      "revenue": "13819417",
+      "phone": "0828198219",
+      "id": 7
     }
   ],
   "profile": {
