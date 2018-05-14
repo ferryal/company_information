@@ -3,6 +3,7 @@ import '../App.css';
 
 import CompanyList from './CompanyList'
 import CompanyForm from './CompanyForm'
+import OfficeForm from './OfficeForm'
 
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
         </div>
         <div className="office_form">
           <h2>Create Office</h2>
-          <CompanyForm />
+          <OfficeForm />
         </div>
         <div className="company_list">
           <CompanyList />
